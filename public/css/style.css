@@ -1,0 +1,104 @@
+/***********************************************/
+/* Document */
+/***********************************************/
+body{
+    margin: 0;
+}
+
+/***********************************************/
+/* Slideshow */
+/***********************************************/
+#slideshowContainer{
+    position: relative;
+	width: 100%;
+}
+
+.item{
+    position: relative;
+    display: none;
+}
+
+.sliderActive{
+    display: block;
+    
+}
+
+.sliderActive img{
+    animation: slideFadeIn 0.5s linear;
+}
+
+.item img{
+    width: 100%;
+}
+
+.overSlideContent{
+    position: absolute;
+    z-index: 997;
+    top: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.slideTitle{
+    font-size: 42px;
+}
+
+.slideDesc{
+    font-size: 18px;
+}
+
+/*Controls*/
+.slideshowControl{
+    position : absolute;
+    color : #fff;
+    font-size: 40px;
+    z-index: 999;
+    top: 40%;
+}
+
+#next{
+    right: 5px;
+}
+
+#prev{
+    left: 5px;
+}
+
+/*dots*/
+#dotsContainer{
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 998;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 3px;
+}
+
+.dotActive{
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Animation */
+@keyframes slideFadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}

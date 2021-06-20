@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Slideshow HTML CSS JAVASCRIPT JQUERY - LACKOVIC TOM</title>
+    <meta name="author" content="Lackovic Tom">
+    
+    <!-- Font Awesome -->
+    <link href="./public/import/fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    
+    <!-- Jquery -->
+    <script src="./public/import/jquery-min-3.6.0.js"></script>
+    <!-- Custom Js -->
+    <script src="./public/script/script.js"></script>
+</head>
+<body>
+    <!-- Slideshow -->
+    <div id="slideshowContainer">
+        <!-- Item 1 -->
+        <div class="item sliderActive">
+            <img src="public/media/slide1.jpg" alt="Slider Image">
+            <div class="overSlideContent">
+                <div class="slideTitle">
+                    Slide Title
+                </div>
+                <div class="slideDesc">
+                    <br>
+                    Slide Desc
+                </div>
+            </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="item">
+            <img src="public/media/slide2.jpg" alt="Slider Image">
+            <div class="overSlideContent">
+                <div class="slideTitle">
+                    Slide Title
+                </div>
+                <div class="slideDesc">
+                    <br>
+                    Slide Desc
+                </div>
+            </div>
+        </div>
+    
+        <!-- Item 3 -->
+        <div class="item">
+            <img src="public/media/slide3.jpg" alt="Slider Image">
+            <div class="overSlideContent">
+                <div class="slideTitle">
+                    Slide Title
+                </div>
+                <div class="slideDesc">
+                    <br>
+                    Slide Desc
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrows Control -->
+        <div id="prev" class="slideshowControl" onclick="prevSlide()">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div id="next" class="slideshowControl" onclick="nextSlide()">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <!-- Dots -->
+        <div id="dotsContainer">
+    
+        </div>
+    </div>
+
+</body>
+</html>
