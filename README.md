@@ -1,6 +1,7 @@
 # Simple Slideshow in HTLM CSS JAVASCRIPT AND JQUERY
 This is a very simple *and surely optimizable* slideshow that I created from scratch but it does the job! :sweat_smile: <br>
 I often needed to make some for client sites so I decided to create this improvable foundation and save it somewhere.
+![image](https://user-images.githubusercontent.com/78903463/129203888-e953d9a0-b54c-43e9-a154-6f185a731e67.png)
 
 ## Features
 -Automatic detection of the number of items in the slideshow <br>
